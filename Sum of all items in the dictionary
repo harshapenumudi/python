@@ -1,0 +1,11 @@
+def main():
+	size = int(input("size:"))
+	dictionary = {}
+	for _ in range(size):
+		key = input("key:")
+		value = int(input("value:"))
+		dictionary[key] = value
+	total_sum = sum(dictionary.values())
+	print(f"Sum:{total_sum}")
+if __name__ == "__main__":
+	main()
