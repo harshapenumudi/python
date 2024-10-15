@@ -1,0 +1,25 @@
+"""
+n = int(input())
+my_dict = {}
+"""# Function to accept and sort soldier details
+def sort_soldiers():
+    # Read number of soldiers
+    num_soldiers = int(input())
+    
+    # Initialize an empty dictionary to store soldier details
+    soldiers = {}
+
+    # Input the serial number and name of soldiers
+    for _ in range(num_soldiers):
+        serial_number = int(input())
+        name = input()
+        soldiers[serial_number] = name
+    
+    # Sort the dictionary by serial number (key)
+    sorted_soldiers = dict(sorted(soldiers.items()))
+
+    # Output the sorted dictionary
+    print(sorted_soldiers)
+
+# Run the function
+sort_soldiers()
