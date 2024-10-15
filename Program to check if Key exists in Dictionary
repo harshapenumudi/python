@@ -1,0 +1,31 @@
+def check_key_in_dictionary():
+    # Read keys and values from input
+    keys_input = input().strip()
+    values_input = input().strip()
+    
+    # Split the inputs into lists
+    keys = keys_input.split()
+    values = values_input.split()
+    
+    # Check if the number of keys matches the number of values
+    if len(keys) != len(values):
+        print("Invalid")
+        return
+    
+    # Create the dictionary
+    dictionary = dict(zip(keys, values))
+    
+    # Read the key to check
+    key_to_check = input().strip()
+    
+    # Display the dictionary
+    print(dictionary)
+    
+    # Check for the existence of the key and print the appropriate message
+    if key_to_check in dictionary:
+        print("Exist")
+    else:
+        print("Does not Exist")
+
+# Call the function to run the program
+check_key_in_dictionary()
